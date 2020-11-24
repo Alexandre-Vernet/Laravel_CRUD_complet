@@ -1,8 +1,8 @@
 @csrf
 <div class="form-group">
     <label for="exampleInputEmail1">Nom</label>
-    <input type="text" value="{{ old('nom') ?? $client->nom }}"
-        class="form-control @error('nom') is-invalid @enderror" name="nom">
+    <input type="text" value="{{ old('nom') ?? $client->nom }}" class="form-control @error('nom') is-invalid @enderror"
+        name="nom">
     @error('nom')
         <div class="invalid-feedback">
             {{ $errors->first('nom') }}
